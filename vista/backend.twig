@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block script %}
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+            <!-- Bootstrap -->
+            <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Font Awesome -->
+            <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+            <!-- NProgress -->
+            <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+            <!-- iCheck -->
+            <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+        {% endblock %}    
+        {% block titulo %} 
+        {% endblock %}
+    </head>
+    
+    <body>
+        <div class="contenedor">
+            
+            <header>
+               {# {% block login %}
+                    <div class="login" id="login">
+                        <p>BIENVENIDO</p>
+                        <p>{{nombreUsuario}}</p>
+                    </div>
+                    <a href="../login/logout.php" id="cerrarSesion" > Cerrar Sesi&oacute;n</a>     
+               {% endblock %}#}
+            </header> 
+
+            {% block menu %}
+                <nav></nav>
+            {% endblock %} 
+            
+            <div>                  
+               {% block separador %}
+               {% endblock %}
+            </div> 
+                                             
+            <div class="contenido">                                   
+                {% block contenido %}   
+                {% endblock %}
+            </div>                                   
+      
+      </div>
+{#       <footer> </footer> #}
+    </body>
+</html>

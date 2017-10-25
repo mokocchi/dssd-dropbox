@@ -1,11 +1,5 @@
-<html>
-<head>
-	<title>Hello world</title>
-</head>
-<body>
-<ul>
-<li>One</li>
-<li>Two</li>
-</ul>
-</body>
-</html>
+<?php
+header('Location: ./controlador/index/index.php');
+
+
+
