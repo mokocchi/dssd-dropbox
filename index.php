@@ -1,3 +1,10 @@
+<?php
+$idExpediente = intval($_REQUEST['idExpediente']);
+if(!isset($idExpediente)) {
+  $idExpediente = 'X';
+}
+?>
+
 <html>
    <head>
       <title>Subir foto</title>
@@ -42,7 +49,7 @@
               var dbx = new Dropbox({ accessToken: ACCESS_TOKEN });
               var fileInput = document.getElementById('file-upload');
               var file = fileInput.files[0];
-              dbx.filesUpload({path: '/' + file.name, contents: file})
+              dbx.filesUpload({path: '/'+ <?php echo $idExpediente ?> +'/' + file.name, contents: file})
                 .then(function(response) {
                   var results = document.getElementById('results');
                   results.appendChild(document.createTextNode('Cargado!'));
