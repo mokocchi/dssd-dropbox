@@ -99,7 +99,7 @@ if(!isset($idExpediente)) {
                                 <div class="x_panel">
                                     <div class="x_title">
                                                                                 <!--results-->
-                                        <h2>Selecci&oacute;n de Im&aacute;genes <small id="results" style="color: #1abb9c"></small></h2>
+                                        <h2>Selecci&oacute;n de Im&aacute;genes <small><span id="results" style="color: #1abb9c"></span></small></h2>
                                         <ul class="nav navbar-right panel_toolbox">
                                         </ul>
                                         <div class="clearfix"></div>
