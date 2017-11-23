@@ -98,8 +98,8 @@ if(!isset($idExpediente)) {
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <div class="x_panel">
                                     <div class="x_title">
-                                                                                <!--results-->
-                                        <h2>Selecci&oacute;n de Im&aacute;genes <small><span id="results" style="color: #1abb9c"></span></small></h2>
+                                                                                <!--resultado-->
+                                        <h2>Selecci&oacute;n de Im&aacute;genes <small><span id="mensaje" style="color: #1abb9c"></span></small></h2>
                                         <ul class="nav navbar-right panel_toolbox">
                                         </ul>
                                         <div class="clearfix"></div>
@@ -131,8 +131,8 @@ if(!isset($idExpediente)) {
                                                     var file = fileInput.files[0];
                                                     dbx.filesUpload({path: '/'+ <?php echo $idExpediente ?> +'/' + file.name, contents: file})
                                                         .then(function(response) {
-                                                    var results = document.getElementById('results');
-                                                    $("#results").empty();
+                                                    var results = document.getElementById('mensaje');
+                                                    $("#mensaje").empty();
                                                     results.appendChild(document.createTextNode('Se subio correctamente la imagen.'));
                                                     console.log(response);
                                                     })
