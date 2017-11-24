@@ -10,7 +10,7 @@ $data = json_decode(file_get_contents("php://input"));
 if(isset($data)) {
 $result = 0;
 foreach ($data as $objeto) {
-	$result += strlen($objeto->nombre) * intval($objeto->cantidad);
+	$result += strlen($objeto->nombre) + intval($objeto->cantidad);
 }
 
 $response = [
